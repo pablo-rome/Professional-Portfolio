@@ -95,7 +95,7 @@ footer {
   display: flex;
   align-items: center;
   white-space: nowrap;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
 }
 header {
   height: var(--header-width);
@@ -530,9 +530,6 @@ header .box.c {
 @media (max-width: 767px) {
   .content {
     width: clamp(calc(var(--img-gallery)), 80vw, calc(2.1 * var(--img-gallery)));
-  }
-  footer {
-    flex-wrap: wrap;
   }
   header ul,
   footer ul {
