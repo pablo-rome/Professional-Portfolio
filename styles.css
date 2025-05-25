@@ -229,8 +229,10 @@ h2 {
 }
 .profile-link,
 .project-link {
-  display: block;
-  text-align: right;
+  flex: 1;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
 }
 .div-letter.a {
   background-color: var(--color-04-5);
@@ -270,6 +272,8 @@ h2 {
   gap: var(--space-s);
 }
 .gall-item {
+  display: flex;
+  flex-direction: column;
   padding: 7px;
   background-color: white;
   border-radius: 2px;
@@ -331,6 +335,7 @@ h2 {
 .project-tile {
   background-color: var(--color-07-5);
   height: 40px;
+  min-height: fit-content;
   color: white;
   padding: var(--space-xs);
   font-size: var(--f-size-l);
